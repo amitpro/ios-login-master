@@ -145,6 +145,16 @@ class LoginPage: UIViewController, UITextFieldDelegate {
         })
     }
     
+    private func handleSignUpAnimations() {
+        signUpButton = SignUpButton(for: self)
+        signUpButton?.center = CGPoint(x: mainView.center.x, y: mainView.frame.minY)
+        UIView.animate(withDuration: 0.8, delay: 0, usingSpringWithDamping: 0.85, initialSpringVelocity: 1, options: .curveEaseOut, animations: {
+            self.signUpButton?.transform = CGAffineTransform(rotationAngle: (.pi)/8)
+            self.signUpButton?.alpha = 0.3
+            self.signUpButton?.center = CGPoint(x: self.mainView.center.x*1.5+32, y: self.mainView.frame.minY)
+        })
+    }
+    
     // MARK: LOGIN BUTTON PRESSED
     @objc func loginButtonPressed() {
         guard loginButton?.alpha != 1 , let activityLines = activityLines else { return }
