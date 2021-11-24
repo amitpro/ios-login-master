@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='ios-loginTests.xctest' tests='2' failures='0'>
+  <testsuite name='ios_loginTests.ios_loginTests' tests='2' failures='0'>
+    <testcase classname='ios_loginTests.ios_loginTests' name='testExample' time='0.008'/>
+    <testcase classname='ios_loginTests.ios_loginTests' name='testPerformanceExample' time='0.630'/>
+  </testsuite>
+</testsuites>
